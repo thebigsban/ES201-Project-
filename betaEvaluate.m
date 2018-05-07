@@ -13,6 +13,7 @@ for i = 1:length(connections)
 end
 
 
+%{
 fig =figure();
 plot(betas')
 xlabel('j');
@@ -25,3 +26,4 @@ plot(sort(nonzero))
 xlabel('Number');
 ylabel('Nonzero \beta Terms')
 saveas(fig, 'betasnnz.png');
+%}
